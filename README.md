@@ -1,4 +1,4 @@
-# ThaiNationalID_Generator
+# ThaiNationalID_Generator [![Build Status](https://travis-ci.org/coregameHD/ThaiNationalID.svg?branch=master)](https://travis-ci.org/coregameHD/ThaiNationalID)
 โปรแกรมสุ่มเลขบัตรประชาชน
 
 ### Description
