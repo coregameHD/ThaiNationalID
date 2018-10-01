@@ -6,6 +6,8 @@ import random
 '''โปรแกรมสุ่มเลขบัตรประชาชน
 Thai national ID number generator
 '''
+
+
 class ThaiNationalID_Generator:
     # Generate ID number randomly
     def generate_number(self):
@@ -37,7 +39,7 @@ class ThaiNationalID_Generator:
         tkinter.messagebox.showinfo("About", "Thai National ID Generator\
         \nโปรแกรมสุ่มเลขบัตรประชาชน\n\nBuilt with love by Coregame\nhttps://coregame-th.com")
         
-    def __init__(self):
+    def __init__(self, outputEntry=None):
         window = Tk()
         window.title("สุ่มเลขบัตรประชาชน")
 
