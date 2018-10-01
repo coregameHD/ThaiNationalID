@@ -50,7 +50,7 @@ class ThaiNationalID_Generator:
         commandmenu.add_command(label = "Generate", command = self.generate_number)
         commandmenu.add_command(label = "Copy to Clipboard", command = self.copy_button)
         commandmenu.add_separator()
-        commandmenu.add_command(label = "Exit", command = window.quit)
+        commandmenu.add_command(label = "Exit", command = window.destroy)
 
         aboutmenu = Menu(menubar, tearoff = 0)
         menubar.add_cascade(label = "About", menu = aboutmenu)
@@ -63,8 +63,8 @@ class ThaiNationalID_Generator:
         Label(window, text = "Your number is ").grid(row = 2, column = 1, sticky = W)
         
         self.thai_id = StringVar()
-        Entry(window, textvariable = self.thai_id,
-              justify = RIGHT).grid(row = 2, column = 2, sticky = E)
+        Entry(window, textvariable = self.thai_id,justify = RIGHT, state = 'readonly').grid(row = 2, column = 2, sticky = E)
+        outputEntry.configure()
         
         Button(window, text = "Generate",
                command = self.generate_number).grid(row = 4, column = 2, sticky = E)
