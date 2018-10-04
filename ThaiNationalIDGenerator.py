@@ -11,7 +11,7 @@ Thai national ID number generator
 class ThaiNationalID_Generator:
     # Generate ID number randomly
     def generate_number(self):
-        random_num = random.randint(100000000000, 999999999999)
+        random_num = random.randint(100000000000, 199999999999)
         temp = random_num
         sumall = 0
 
