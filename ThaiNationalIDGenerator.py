@@ -37,7 +37,7 @@ class ThaiNationalID_Generator:
 
     def about_box(self):
         tkinter.messagebox.showinfo("About", "Thai National ID Generator\
-        \nโปรแกรมสุ่มเลขบัตรประชาชน\n\nBuilt with love by Coregame\nhttps://coregame-th.com")
+        \nโปรแกรมสุ่มเลขบัตรประชาชน\n\nBuilt with love by Coregame\nhttps://medium.com/coregameth")
         
     def __init__(self, outputEntry=None):
         window = Tk()
@@ -66,7 +66,6 @@ class ThaiNationalID_Generator:
         
         self.thai_id = StringVar()
         Entry(window, textvariable = self.thai_id,justify = RIGHT, state = 'readonly').grid(row = 2, column = 2, sticky = E)
-        outputEntry.configure()
         
         Button(window, text = "Generate",
                command = self.generate_number).grid(row = 4, column = 2, sticky = E)
